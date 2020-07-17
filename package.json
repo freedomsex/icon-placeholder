@@ -1,0 +1,23 @@
+{
+  "name": "@freedomsex/icon-placeholder",
+  "version": "1.0.0",
+  "description": "Big icon placeholder",
+  "main": "index.vue",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/freedomsex/icon-placeholder.git"
+  },
+  "keywords": [
+    "vue",
+    "component"
+  ],
+  "author": "tebaly",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/freedomsex/icon-placeholder/issues"
+  },
+  "homepage": "https://github.com/freedomsex/icon-placeholder#readme"
+}
