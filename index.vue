@@ -1,13 +1,13 @@
 <script>
 export default {
-  props: ['icon', 'text', 'style'],
+  props: ['icon', 'text', 'styles'],
 };
 </script>
 
 <template>
   <div class="big-icon-placeholder">
     <div class="big-icon__info">
-      <i :class="style || 'material-icons'" v-html="icon"></i>
+      <i :class="styles || 'material-icons'" v-html="icon"></i>
       <div class="big-icon__text">
         {{text}}
       </div>
