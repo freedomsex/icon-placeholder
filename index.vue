@@ -1,13 +1,13 @@
 <script>
 export default {
-  props: ['icon', 'text'],
+  props: ['icon', 'text', 'style'],
 };
 </script>
 
 <template>
   <div class="big-icon-placeholder">
     <div class="big-icon__info">
-      <i class="material-icons" v-html="icon"></i>
+      <i :class="style || 'material-icons'" v-html="icon"></i>
       <div class="big-icon__text">
         {{text}}
       </div>
@@ -26,7 +26,7 @@ export default {
   height: 100%;
   display: flex;
   flex-direction: column;
-  color: @gray;
+  color: if(@gray, @gray, #999999);
 
   .big-icon {
     &__info {
@@ -37,7 +37,7 @@ export default {
       align-items: center;
       i {
         font-size: 120px;
-        color: @gray-light;
+        color: if(@gray-light, @gray-light, #cccccc);
       }
     }
 
@@ -59,7 +59,7 @@ export default {
       font-size: 14px;
       max-width: 350px;
       margin: 0 auto;
-      color: @gray-dark;
+      color: if(@gray-dark, @gray-dark, #666666);
     }
   }
 
